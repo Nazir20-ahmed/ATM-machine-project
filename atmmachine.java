@@ -24,4 +24,14 @@ class ATM{
         System.out.println("3. Deposit Money");
         System.out.println("4. EXIT");
     }
+    Scanner sc=new Scanner(System.in);
+        int opt=sc.nextInt();
+       
+        if(opt==1){
+            checkBalance();
+        }
+
+        else if(opt==2){
+            Withdramoney();
+        }
 }
