@@ -66,7 +66,19 @@ class ATM{
             manu();
         }
         // Now add withdramoney method and call methods
-    
+        public void Withdramoney(){
+            System.out.println("Enter amount to withdraw money");
+            Scanner sc=new Scanner (System.in);
+            float amount= sc.nextFloat();
+            if(amount>Balance){
+                System.out.println("Insuficient balance");
+            }
+            else{
+                Balance=Balance-amount;
+                System.out.println("Withdraw successfuly");
+            }
+            manu();
+        }
 
 }
 
