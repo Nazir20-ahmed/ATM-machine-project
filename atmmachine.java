@@ -16,4 +16,12 @@ class ATM{
             System.out.println("Sorry enter a valid pin; ");
         }
     }
+    public void manu(){
+
+        System.out.println(" Enetr your choice ");
+        System.out.println("1. Check Balance");
+        System.out.println("2. Withdraw Money");
+        System.out.println("3. Deposit Money");
+        System.out.println("4. EXIT");
+    }
 }
