@@ -89,6 +89,21 @@ class ATM{
     
         }
     }
+    public class atmmachine {
+        public static void main(String[] args) {
+       
+        ATM obj = new ATM();
+            obj.checkpin();
+            obj.checkBalance();
+            obj.Withdramoney();
+            obj.depositmoney();
+            
+            
+        }
+        
+    }
+    
+    
     
 
 
