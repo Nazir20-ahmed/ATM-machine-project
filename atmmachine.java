@@ -34,4 +34,16 @@ class ATM{
         else if(opt==2){
             Withdramoney();
         }
+        else if(opt==3){
+            depositmoney();
+        }
+        else if(opt==4){
+            return;
+        }
+        else{
+            System.out.println("Enter a valid choice:");
+        }
+
 }
+
+    
