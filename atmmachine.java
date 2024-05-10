@@ -65,6 +65,7 @@ class ATM{
             System.out.println("Balance:"+Balance);
             manu();
         }
+        // Now add withdramoney method and call methods
     
 
 }
