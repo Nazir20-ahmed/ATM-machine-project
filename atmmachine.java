@@ -79,7 +79,17 @@ class ATM{
             }
             manu();
         }
+        public void depositmoney(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter amount to deposit");
+            float amount= sc.nextFloat();
+            Balance=Balance+amount;
+            System.out.println("Deposit succssefully");
+            manu();
+    
+        }
+    }
+    
 
-}
 
     
