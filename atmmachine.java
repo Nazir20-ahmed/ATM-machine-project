@@ -23,7 +23,7 @@ class ATM{
         System.out.println("2. Withdraw Money");
         System.out.println("3. Deposit Money");
         System.out.println("4. EXIT");
-    }
+    
     Scanner sc=new Scanner(System.in);
         int opt=sc.nextInt();
        
@@ -43,29 +43,12 @@ class ATM{
         else{
             System.out.println("Enter a valid choice:");
         }
+    }
         public void checkBalance(){
             System.out.println("Balance:"+Balance);
             manu();
         }
     
-        public void Withdramoney(){
-            System.out.println("Enter amount to withdraw money");
-            Scanner sc=new Scanner (System.in);
-            float amount= sc.nextFloat();
-            if(amount>Balance){
-                System.out.println("Insuficient balance");
-            }
-            else{
-                Balance=Balance-amount;
-                System.out.println("Withdraw successfuly");
-            }
-            manu();
-        }
-        public void checkBalance(){
-            System.out.println("Balance:"+Balance);
-            manu();
-        }
-        // Now add withdramoney method and call methods
         public void Withdramoney(){
             System.out.println("Enter amount to withdraw money");
             Scanner sc=new Scanner (System.in);
@@ -96,8 +79,7 @@ class ATM{
             obj.checkpin();
             obj.checkBalance();
             obj.Withdramoney();
-            obj.depositmoney();
-            
+            obj.depositmoney(); 
             
         }
         
