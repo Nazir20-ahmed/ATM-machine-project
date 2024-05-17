@@ -1,0 +1,12 @@
+<project name = "ATM-PROJECT" default="run">
+    <target name="compile">
+        <mkdir dir="build"/>
+        <javac srcdir = "ATM-machine-project" destdir="build"/>
+    </target>
+    <target name = "run" depends="compile">
+        <java classname="atmmachine" classpath="build"/>
+    </target>
+    <target name = "clean">
+        <delete dir = "build"/>
+        </target>
+</project>
